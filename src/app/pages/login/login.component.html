@@ -1,0 +1,37 @@
+<nz-layout>
+    <div class="header-title">
+        <h1 style="font-style:oblique;color: white;">长沙市娱乐特业管控系统</h1>
+    </div>
+        <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">  
+            <nz-form-item>
+                <nz-form-control [nzSpan]="24" >
+                </nz-form-control>
+              </nz-form-item >
+            <nz-form-item>
+              <nz-form-control [nzSpan]="18" nzOffset="3" nzErrorTip="请输入账号!">
+                <nz-input-group nzPrefixIcon="user">
+                  <input type="text" [(ngModel)]="binding" formControlName="userName" nz-input placeholder="请输入账号" />
+                </nz-input-group>
+              </nz-form-control>
+            </nz-form-item >
+            <nz-form-item >
+              <nz-form-control [nzSpan]="18" nzOffset="3" nzErrorTip="请输入密码!">
+                <nz-input-group nzPrefixIcon="lock">
+                  <input type="password" nz-input formControlName="password" placeholder="请输入密码" />
+                </nz-input-group>
+              </nz-form-control>
+            </nz-form-item >
+            <nz-form-item >  
+              <nz-form-control [nzSpan]="18" nzOffset="3">
+                <label nz-checkbox formControlName="remember">
+                  <span style="color: #1890ff;">记住密码</span>
+                </label>
+                <a class="login-form-forgot" class="login-form-forgot">忘记密码</a>
+                <button nz-button [routerLink]="['/home']"  class="login-form-button" [nzType]="'primary'">登录</button>
+                <img src="../../../assets/svg/01.svg" style="width: 25px;height: 25px;"/>
+                <a>长沙市娱乐特业管控系统</a>
+              </nz-form-control>
+            </nz-form-item>
+          </form>  
+  </nz-layout>
+  

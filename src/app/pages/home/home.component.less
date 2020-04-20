@@ -1,0 +1,111 @@
+@import "../../../assets/styles/varibles.less";
+@import "../../../assets/styles/mixins.less";
+:host{
+    display: flex;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /*容器根目录高度100%*/
+  .app-layout{
+    height: 100vh;
+  }
+  /**侧边栏容器*/
+  .menu-sidebar{
+    position: relative;
+    z-index: 10;
+    min-height: 100vh;
+    box-shadow: 2px 0 6px #00152959;
+  }
+  /**侧栏娱乐管控log 描述容器*/
+  .sidebar-logo{
+    position: relative;
+    height: 64px;
+    padding:0 10px 24px 0;
+    overflow: hidden;
+    line-height: 64px;
+    background: #001529;
+    transition: all .3;
+    color: white;
+    margin-bottom: 5px;
+  }
+  /**娱乐系统管控log*/
+  .sidebar-logo img {
+    display: inline-block;//行内块状元素
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+  }
+  /*娱乐管控系统平台标题*/
+  .sidebar-logo h1{
+    display: inline-block;//作用和log保持一行
+    margin: 0 0 0 20px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    font-family: Avenir,Helvetica Neue,Arial,Helvetica,sans-serif;
+    vertical-align: middle;//居中
+  }
+  /*顶部导航header标签*/
+  nz-header{
+    padding: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  /**顶部导航header容器*/
+  .app-header{
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+    padding: 0;
+    background: #142436;
+    box-shadow: 0 1px 4px #ebe2e2d8;
+  }
+  /**侧边栏开启动画图标*/
+  .header-trigger{
+    height: 64px;
+    color: #e6e8ec !important;
+    padding: 0 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s,padding 0s;
+  }
+  /**侧边栏图标hove颜色*/
+  .trigger:hover{
+    color: #1890ff;
+  }
+  /*导航列表div容器*/
+  .header-item{
+    display: flex;
+    float: right;
+    height: 64px;
+  }
+  /*导航列表ul容器*/
+  .ment-right ul{
+    color: white !important;
+    background: #142436 !important ;
+    margin: auto;
+  }
+  /*导航列表li*/
+  .ment-right>ul>li{
+    margin: 0 5px;
+    margin: auto;
+  }
+  /*header搜索框容器*/
+  .header-input{
+    margin-right: 10px;
+  }
+  /*固定路由内容区域标签*/
+  nz-content{
+    margin: 24px;
+  }
+  /*系统功能分割线*/
+  .bow{
+    font-size: 16px;
+    align-content: center;
+    letter-spacing: 1px;
+    font-weight: 800;
+    text-align: center;
+    color: #9bb2c5;
+  }
+
