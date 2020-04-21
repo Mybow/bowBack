@@ -1,0 +1,95 @@
+<div class="sys_tjfx_bbxt">
+    <div class="query_bar sys_public_box">
+        <div class="query_title sys_public_title">
+            <img src="../../../../assets/sys/查询.png" alt="">
+            <span>查询条件</span>
+        </div>
+        <div class="query_options">
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                        所属分局：
+                    </span>
+                </div>
+                <div class="option">
+                    <nz-select nzSize='small' [(ngModel)]="queryData.fenju" nzAllowClear nzPlaceHolder="Choose">
+                        <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+                    </nz-select>
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                        所属分局：
+                    </span>
+                </div>
+                <div class="option">
+                    <nz-select nzSize='small' [(ngModel)]="queryData.fenju" nzAllowClear nzPlaceHolder="Choose">
+                        <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+                    </nz-select>
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                        所属分局：
+                    </span>
+                </div>
+                <div class="option">
+                    <nz-select nzSize='small' [(ngModel)]="queryData.fenju" nzAllowClear nzPlaceHolder="Choose">
+                        <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+                    </nz-select>
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                        所属分局：
+                    </span>
+                </div>
+                <div class="option">
+                    <input nzSize="small" nz-input placeholder="Basic usage" [(ngModel)]="queryData.fenju" />
+                </div>
+            </div>
+        </div>
+        <div class="button_bar">
+            <div class="but_box">
+                <div class="but_item">
+                    查询
+                </div>
+                <div class="but_item">
+                    重置
+                </div>
+                <div class="but_item">
+                    导出excel
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="infoList sys_public_box">
+        <div class="query_title sys_public_title">
+            <img src="../../../../assets/sys/列表.png" alt="">
+            <span>信息列表</span>
+        </div>
+        <div class="table_content">
+            <nz-table #table [nzData]="tableData.data">
+                <thead>
+                    <tr>
+                        <th *ngFor="let title of tableData.title">{{title.value}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of table.data">
+                        <td *ngFor="let item of tableData.title">{{data[item.key]}}</td>
+                    </tr>
+                </tbody>
+            </nz-table>
+        </div>
+    </div>
+</div>

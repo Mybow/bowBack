@@ -1,0 +1,18 @@
+<div class="sys_">
+    <div class="sys_topBar">
+        <div class="sys_name">321123</div>
+        <div class="sys_routerBar">
+            <ul nz-menu nzMode="horizontal">
+                <li *ngFor="let item of routerList" nz-submenu [nzTitle]="item.name">
+                    <ul>
+                        <li (click)='routerLink(p.url)' nz-menu-item *ngFor="let p of item.options;index as i">{{p.name}}</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="sys_content">
+        <router-outlet></router-outlet>
+    </div> -->
+    <router-outlet></router-outlet>
+</div>

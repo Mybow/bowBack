@@ -3,11 +3,11 @@ import { HomeModule } from './home/home.module';
 import { LoginModule } from './login/login.module';
 
 @NgModule({
-  imports:[
+  imports: [
     LoginModule,
     HomeModule
   ],
-  exports:[
+  exports: [
     LoginModule,
     HomeModule
   ]
