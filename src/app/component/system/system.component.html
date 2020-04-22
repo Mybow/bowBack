@@ -1,7 +1,12 @@
+<!-- 10大子系统模板 -->
 <div class="sys_">
+    <!-- 系统顶部导航栏 -->
     <div class="sys_topBar">
+        <!-- 系统名字，可通过路由传参的方式映射 -->
         <div class="sys_name">321123</div>
+        <!-- 系统导航栏 -->
         <div class="sys_routerBar">
+            <!-- zorro 导航栏组件 -->
             <ul nz-menu nzMode="horizontal">
                 <li *ngFor="let item of routerList" nz-submenu [nzTitle]="item.name">
                     <ul>
@@ -16,3 +21,4 @@
     </div> -->
     <router-outlet></router-outlet>
 </div>
+<!-- end 10大子系统模板 -->

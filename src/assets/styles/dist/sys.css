@@ -1,5 +1,7 @@
 .sys_ {
-  padding: 10px;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
 }
 .sys_ .sys_topBar {
   display: flex;
@@ -8,6 +10,9 @@
   color: black;
   padding-left: 45px;
   background-color: #ccc;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 .sys_ .sys_topBar .sys_name {
   height: 100%;
@@ -30,6 +35,13 @@
 }
 .sys_ .sys_tjfx_bbxt {
   padding: 0 10%;
+  height: 100%;
+  overflow: scroll;
+  margin-top: 50px;
+  padding-bottom: 40px;
+}
+.sys_ .sys_tjfx_bbxt::-webkit-scrollbar {
+  width: 0;
 }
 .sys_ .sys_tjfx_bbxt .query_options {
   display: flex;
@@ -73,6 +85,7 @@
   line-height: 30px;
   padding: 0 15px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .sys_ .sys_tjfx_bbxt .button_bar .but_box .but_item:nth-child(2) {
   margin: 0 20px;
