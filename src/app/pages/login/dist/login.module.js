@@ -7,21 +7,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 exports.__esModule = true;
 var core_1 = require("@angular/core");
-var home_routing_module_1 = require("./home-routing.module");
-var home_component_1 = require("./home.component");
+var login_routing_module_1 = require("./login-routing.module");
+var login_component_1 = require("./login.component");
 var shared_module_1 = require("src/app/shared/shared.module");
-var HomeModule = /** @class */ (function () {
-    function HomeModule() {
+var LoginModule = /** @class */ (function () {
+    function LoginModule() {
     }
-    HomeModule = __decorate([
+    LoginModule = __decorate([
         core_1.NgModule({
-            declarations: [home_component_1.HomeComponent],
+            declarations: [login_component_1.LoginComponent],
             imports: [
                 shared_module_1.SharedModule,
-                home_routing_module_1.HomeRoutingModule // home路由
+                login_routing_module_1.LoginRoutingModule
             ]
         })
-    ], HomeModule);
-    return HomeModule;
+    ], LoginModule);
+    return LoginModule;
 }());
-exports.HomeModule = HomeModule;
+exports.LoginModule = LoginModule;

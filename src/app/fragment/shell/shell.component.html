@@ -1,0 +1,27 @@
+<div class="sys_tjfx_bbxt sys_box">
+    <!-- 查询条件板块 -->
+    <div class="query_bar sys_public_box">
+        <div class="query_title sys_public_title">
+            <img src="../../../../assets/sys/查询.png" alt="">
+            <span>查询条件</span>
+        </div>
+        <ng-content select="[name=queryFrag]"></ng-content>
+    </div>
+    <!-- 信息列表板块 -->
+    <div class="infoList sys_public_box">
+        <nz-modal (nzOnCancel)='closeWindow.emit()' [nzCancelText]='null' [nzGetContainer]='getNode' [nzFooter]='null' [(nzVisible)]="isOpen">
+            <div class="window_info_item">
+                <div class='window_top'>
+                    <img src="../../../../assets/sys/机关.png" alt="">
+                    <span>单位信息</span>
+                </div>
+            </div>
+            <ng-content select="[name=shadowFrag]"></ng-content>
+        </nz-modal>
+        <div class="query_title sys_public_title">
+            <img src="../../../../assets/sys/列表.png" alt="">
+            <span>信息列表</span>
+        </div>
+        <ng-content select="[name=tableFrag]"></ng-content>
+    </div>
+</div>

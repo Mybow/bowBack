@@ -1,84 +1,143 @@
-.sys_ {
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+#SYS_ {
   position: relative;
   height: 100%;
   overflow: hidden;
+  background-color: #f7f7f7;
+  min-width: 900px;
 }
-.sys_ .sys_topBar {
+#SYS_ .sys_topBar {
+  height: 70px;
+  background: #142436;
+  position: relative;
+}
+#SYS_ .sys_topBar .sys_name {
+  padding-left: 25px;
+  height: 100%;
   display: flex;
   align-items: center;
+}
+#SYS_ .sys_topBar .sys_name img {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+#SYS_ .sys_topBar .sys_name span {
   font-size: 20px;
-  color: black;
-  padding-left: 45px;
-  background-color: #ccc;
-  position: absolute;
-  left: 0;
-  right: 0;
+  line-height: 35px;
+  color: #ffffff;
+  margin-left: 10px;
 }
-.sys_ .sys_topBar .sys_name {
+#SYS_ .sys_middle {
   height: 100%;
-  width: 20%;
-  display: flex;
-  align-items: center;
-}
-.sys_ .sys_topBar .sys_routerBar {
-  flex: 1;
-  height: 100%;
-}
-.sys_ .sys_topBar .sys_routerBar > ul {
+  position: relative;
   display: flex;
 }
-.sys_ .sys_topBar .sys_routerBar > ul li {
+#SYS_ .sys_middle .sys_navigation {
+  width: 250px;
+  height: 100%;
+  background-color: #001529;
+  overflow: scroll;
+}
+#SYS_ .sys_middle .sys_content {
   flex: 1;
-}
-.sys_ .sys_topBar .sys_routerBar > ul li > div {
-  text-align: center;
-}
-.sys_ .sys_tjfx_bbxt {
-  padding: 0 10%;
   height: 100%;
   overflow: scroll;
-  margin-top: 50px;
-  padding-bottom: 40px;
+  padding: 15px;
 }
-.sys_ .sys_tjfx_bbxt::-webkit-scrollbar {
+#SYS_ .pointer {
+  cursor: pointer;
+}
+#SYS_ .ant-modal {
+  height: 90%;
+  width: 60% !important;
+  top: 5%;
+  padding: 0 !important;
+}
+#SYS_ .ant-modal .ant-modal-body {
+  height: 100%;
+  padding: 25px 15px;
+}
+#SYS_ .ant-modal .ant-modal-content {
+  height: 100%;
+  overflow: scroll;
+}
+#SYS_ .ant-modal .window_info_item {
+  padding: 20px;
+  margin: 0 30px;
+  border-radius: 3px;
+  border-radius: 5px;
+}
+#SYS_ .ant-modal .window_info_item .window_top {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+}
+#SYS_ .ant-modal .window_info_item .window_top img {
+  width: 30px;
+  height: 30px;
+}
+#SYS_ .ant-modal .window_info_item .window_top span {
+  font-size: 18px;
+  margin-left: 20px;
+}
+#SYS_ .sys_box {
+  position: relative;
+  height: 100%;
+  overflow: scroll;
+}
+#SYS_ .sys_box::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+#SYS_ .sys_tjfx_bbxt {
+  padding: 15px 10%;
+  height: 100%;
+  overflow: scroll;
+}
+#SYS_ .sys_tjfx_bbxt::-webkit-scrollbar {
   width: 0;
 }
-.sys_ .sys_tjfx_bbxt .query_options {
+#SYS_ .sys_tjfx_bbxt .query_options {
   display: flex;
   margin-top: 20px;
   flex-wrap: wrap;
 }
-.sys_ .sys_tjfx_bbxt .query_options .query_item {
+#SYS_ .sys_tjfx_bbxt .query_options .query_item {
   width: 33.333333%;
   display: flex;
   margin: 10px 0;
 }
-.sys_ .sys_tjfx_bbxt .query_options .query_item .item_name {
+#SYS_ .sys_tjfx_bbxt .query_options .query_item .item_name {
   width: 40%;
   display: flex;
   align-items: center;
   padding-right: 10px;
   justify-content: flex-end;
-  color: #ffffff;
   white-space: nowrap;
 }
-.sys_ .sys_tjfx_bbxt .query_options .query_item .option {
+#SYS_ .sys_tjfx_bbxt .query_options .query_item .option {
   flex: 1;
 }
-.sys_ .sys_tjfx_bbxt .query_options .query_item .option nz-select,
-.sys_ .sys_tjfx_bbxt .query_options .query_item .option nz-input {
+#SYS_ .sys_tjfx_bbxt .query_options .query_item .option nz-select,
+#SYS_ .sys_tjfx_bbxt .query_options .query_item .option nz-input {
   width: 100%;
   height: 25px;
 }
-.sys_ .sys_tjfx_bbxt .button_bar {
+#SYS_ .sys_tjfx_bbxt .button_bar {
   display: flex;
   margin: 15px 0;
 }
-.sys_ .sys_tjfx_bbxt .button_bar .but_box {
+#SYS_ .sys_tjfx_bbxt .button_bar .but_box {
   display: flex;
   margin: 0 auto;
 }
-.sys_ .sys_tjfx_bbxt .button_bar .but_box .but_item {
+#SYS_ .sys_tjfx_bbxt .button_bar .but_box .but_item {
   height: 30px;
   background-color: #169BD5;
   color: #ffffff;
@@ -87,26 +146,40 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.sys_ .sys_tjfx_bbxt .button_bar .but_box .but_item:nth-child(2) {
+#SYS_ .sys_tjfx_bbxt .button_bar .but_box .but_item:nth-child(2) {
   margin: 0 20px;
 }
-.sys_ .sys_tjfx_bbxt .infoList nz-table {
+#SYS_ .sys_tjfx_bbxt .infoList nz-table {
   margin-top: 20px;
 }
-.sys_ .sys_tjfx_bbxt .infoList nz-table td,
-.sys_ .sys_tjfx_bbxt .infoList nz-table th {
+#SYS_ .sys_tjfx_bbxt .infoList nz-table td,
+#SYS_ .sys_tjfx_bbxt .infoList nz-table th {
   background-color: #ffffff;
   white-space: nowrap;
 }
 .sys_public_box {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 10px;
   margin: 15px 0;
+  position: relative;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  color: #333;
 }
 .sys_public_box .sys_public_title span {
-  color: #ffffff;
   font-size: 20px;
   vertical-align: middle;
   margin-left: 15px;
+}
+.sys_public_box .query_item span {
+  color: #333;
+}
+.sys_public_box .table_content {
+  position: relative;
+  min-height: 50%;
+}
+.sys_public_box .table_content .totalClass {
+  position: absolute;
+  bottom: 20px;
+  left: 30%;
 }

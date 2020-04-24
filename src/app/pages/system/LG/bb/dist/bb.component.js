@@ -61,28 +61,37 @@ var BbComponent = /** @class */ (function () {
                     key: "phone",
                     value: "法定代表人电话"
                 },
-                {
-                    key: "caozuo",
-                    value: "操作"
-                },
             ],
             data: []
         };
+        this.pagination = {
+            total: 10,
+            number: 10
+        };
+        this.BoxStyle = {
+            height: "90%",
+            top: "5%"
+        };
+        this.isOpen = false;
     }
+    BbComponent.prototype.getNode = function () {
+        return document.getElementById("SYS_");
+    };
+    BbComponent.prototype.openWindow = function (index) {
+        this.isOpen = true;
+    };
+    BbComponent.prototype.closeWindow = function () {
+        console.log('close');
+        this.isOpen = false;
+    };
     BbComponent.prototype.ngOnInit = function () {
-        for (var i = 0; i < 100; i++) {
-            this.tableData.data.push({
-                code: 1236,
-                fenju: "芙蓉区",
-                paichusuo: "芙蓉区",
-                name: "大酒店",
-                dizhi: "芙蓉广场",
-                state: "正常",
-                Pname: "王大陆",
-                phone: "wenhao",
-                caozuo: "详情"
-            });
-        }
+        console.log('ngOnInit ');
+    };
+    BbComponent.prototype.ngAfterContentInit = function () {
+        console.log('ngAfterContentInit ');
+    };
+    BbComponent.prototype.ngAfterViewInit = function () {
+        console.log('ngAfterViewInit ');
     };
     BbComponent = __decorate([
         core_1.Component({

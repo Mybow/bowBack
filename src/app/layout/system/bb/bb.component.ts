@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit ,Output,EventEmitter} from "@angular/core";
 
 @Component({
   selector: "app-bb",
@@ -6,6 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styles: [],
 })
 export class BbComponent implements OnInit {
+  @Output() private outEvent= new EventEmitter<string>() 
   queryData = {
     fenju: "",
     paichusuo: "",
@@ -20,6 +21,9 @@ export class BbComponent implements OnInit {
     dengji: "",
     congyerenyuan: "",
   };
+  getNode(){
+    return document.getElementById('SYS_')
+  }
   tableData = {
     title: [
       {
@@ -57,18 +61,22 @@ export class BbComponent implements OnInit {
       {
         key: "phone",
         value: "法定代表人电话",
-      },
-      {
-        key: "caozuo",
-        value: "操作",
-      },
+      }
     ],
     data: [],
   };
+  pagination = {
+    total: 10,
+    number: 10
+  };
+  isOpen=true
+  openWindow(index){
+    console.log(index)
+  }
   constructor() {}
 
   ngOnInit() {
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 43; i++) {
       this.tableData.data.push({
         code: 1236,
         fenju: "芙蓉区",
@@ -77,8 +85,7 @@ export class BbComponent implements OnInit {
         dizhi: "芙蓉广场",
         state: "正常",
         Pname: "王大陆",
-        phone: "wenhao",
-        caozuo: "详情",
+        phone: "wenhao"
       });
     }
   }

@@ -7,21 +7,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 exports.__esModule = true;
 var core_1 = require("@angular/core");
-var home_routing_module_1 = require("./home-routing.module");
-var home_component_1 = require("./home.component");
+var system_routing_module_1 = require("./system-routing.module");
+var system_component_1 = require("./system.component");
 var shared_module_1 = require("src/app/shared/shared.module");
-var HomeModule = /** @class */ (function () {
-    function HomeModule() {
+var bb_component_1 = require("./LG/bb/bb.component");
+var shell_component_1 = require("../../fragment/shell/shell.component");
+var SystemModule = /** @class */ (function () {
+    function SystemModule() {
     }
-    HomeModule = __decorate([
+    SystemModule = __decorate([
         core_1.NgModule({
-            declarations: [home_component_1.HomeComponent],
+            declarations: [system_component_1.SystemComponent, bb_component_1.BbComponent, shell_component_1.ShellComponent],
             imports: [
                 shared_module_1.SharedModule,
-                home_routing_module_1.HomeRoutingModule // home路由
+                system_routing_module_1.SystemRoutingModule,
             ]
         })
-    ], HomeModule);
-    return HomeModule;
+    ], SystemModule);
+    return SystemModule;
 }());
-exports.HomeModule = HomeModule;
+exports.SystemModule = SystemModule;

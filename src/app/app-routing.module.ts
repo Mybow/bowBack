@@ -10,6 +10,10 @@ const routes: Routes = [
       {
         path:'login',
         loadChildren:() => import('./pages/login/login.module').then(mod => mod.LoginModule)
+      },
+      {
+        path:'system',
+        loadChildren:() => import('./pages/system/system.module').then(mod => mod.SystemModule)
       }
 ]
 

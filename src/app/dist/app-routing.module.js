@@ -17,6 +17,10 @@ var routes = [
     {
         path: 'login',
         loadChildren: function () { return Promise.resolve().then(function () { return require('./pages/login/login.module'); }).then(function (mod) { return mod.LoginModule; }); }
+    },
+    {
+        path: 'system',
+        loadChildren: function () { return Promise.resolve().then(function () { return require('./pages/system/system.module'); }).then(function (mod) { return mod.SystemModule; }); }
     }
 ];
 var AppRoutingModule = /** @class */ (function () {

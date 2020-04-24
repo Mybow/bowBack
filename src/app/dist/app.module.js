@@ -14,13 +14,9 @@ var AppModule = /** @class */ (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            declarations: [
-                app_component_1.AppComponent
-            ],
-            imports: [
-                core_module_1.CoreModule
-            ],
-            bootstrap: [app_component_1.AppComponent] //根目录启动
+            declarations: [app_component_1.AppComponent],
+            imports: [core_module_1.CoreModule],
+            bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);
     return AppModule;
