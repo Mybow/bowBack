@@ -10,7 +10,7 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var system_component_1 = require("./system.component");
 // template
-var bb_component_1 = require("./LG/bb/bb.component");
+var bb_component_1 = require("./LG/_tjfx/bb/bb.component");
 var routes = [
     {
         path: "",

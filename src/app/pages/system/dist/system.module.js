@@ -10,7 +10,7 @@ var core_1 = require("@angular/core");
 var system_routing_module_1 = require("./system-routing.module");
 var system_component_1 = require("./system.component");
 var shared_module_1 = require("src/app/shared/shared.module");
-var bb_component_1 = require("./LG/bb/bb.component");
+var bb_component_1 = require("./LG/_tjfx/bb/bb.component");
 var shell_component_1 = require("../../fragment/shell/shell.component");
 var SystemModule = /** @class */ (function () {
     function SystemModule() {

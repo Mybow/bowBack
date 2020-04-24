@@ -3,7 +3,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { SystemComponent } from "./system.component";
 
 // template
-import {BbComponent} from './LG/bb/bb.component'
+import {BbComponent} from './LG/_tjfx/bb/bb.component'
 const routes: Routes = [
   {
     path: "",
