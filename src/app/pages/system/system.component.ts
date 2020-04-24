@@ -3,7 +3,7 @@ import { Router, ActivatedRoute } from "@angular/router";
 @Component({
   selector: "app-system",
   templateUrl: "./system.component.html",
-  styleUrls: ["./system.component.less"]
+  styleUrls: ["./system.component.less"],
 })
 export class SystemComponent implements OnInit {
   routerList = [
@@ -18,6 +18,10 @@ export class SystemComponent implements OnInit {
           url: "22",
           name: "从业人员信息",
         },
+        {
+          url: "33",
+          name: "安全防范设备信息",
+        },
       ],
     },
     {
@@ -25,11 +29,7 @@ export class SystemComponent implements OnInit {
       options: [
         {
           url: "33",
-          name: "国内旅客",
-        },
-        {
-          url: "44",
-          name: "境外旅客",
+          name: "旅客查询",
         },
       ],
     },
@@ -44,6 +44,14 @@ export class SystemComponent implements OnInit {
           url: "",
           name: "从业人员涉及案事件信息",
         },
+        {
+          url: "",
+          name: "警情情况",
+        },
+        {
+          url: "",
+          name: "法律法规",
+        },
       ],
     },
     {
@@ -53,10 +61,49 @@ export class SystemComponent implements OnInit {
           url: "bb",
           name: "报表统计",
         },
+        {
+          url: "",
+          name: "图表统计",
+        },
       ],
     },
     {
       name: "安检信息",
+      options: [
+        {
+          url: "bb",
+          name: "日常检查",
+        },
+        {
+          url: "",
+          name: "通知通告",
+        },
+        {
+          url: "",
+          name: "可疑情况",
+        },
+      ],
+    },
+    {
+      name: "其他信息",
+      options: [
+        {
+          url: "bb",
+          name: "智能采集设备信息",
+        },
+        {
+          url: "",
+          name: "人员抓拍采集信息",
+        },
+        {
+          url: "",
+          name: "人脸抓拍采集信息",
+        },
+        {
+          url: "",
+          name: "机车抓拍采集信息",
+        },
+      ],
     },
   ];
   constructor(private router: Router, private route: ActivatedRoute) {}

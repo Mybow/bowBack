@@ -8,7 +8,7 @@
                 </span>
                 </div>
                 <div class="option">
-                    <nz-select nzSize='small' [(ngModel)]="queryData.fenju" nzAllowClear nzPlaceHolder="Choose">
+                    <nz-select nzSize='small' [(ngModel)]="value" nzAllowClear nzPlaceHolder="Choose">
                         <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
                         <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
                         <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
@@ -18,11 +18,11 @@
             <div class="query_item">
                 <div class="item_name">
                     <span>
-                    所属分局：
+                    所属派出所：
                 </span>
                 </div>
                 <div class="option">
-                    <nz-select nzSize='small' [(ngModel)]="queryData.fenju" nzAllowClear nzPlaceHolder="Choose">
+                    <nz-select nzSize='small' [(ngModel)]="value" nzAllowClear nzPlaceHolder="Choose">
                         <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
                         <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
                         <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
@@ -32,11 +32,11 @@
             <div class="query_item">
                 <div class="item_name">
                     <span>
-                    所属分局：
+                    所属社区：
                 </span>
                 </div>
                 <div class="option">
-                    <nz-select nzSize='small' [(ngModel)]="queryData.fenju" nzAllowClear nzPlaceHolder="Choose">
+                    <nz-select nzSize='small' [(ngModel)]="value" nzAllowClear nzPlaceHolder="Choose">
                         <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
                         <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
                         <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
@@ -46,11 +46,175 @@
             <div class="query_item">
                 <div class="item_name">
                     <span>
-                    所属分局：
+                    场所名称：
                 </span>
                 </div>
                 <div class="option">
-                    <input nzSize="small" nz-input placeholder="Basic usage" [(ngModel)]="queryData.fenju" />
+                    <input nzSize="small" nz-input placeholder="Basic usage" [(ngModel)]="value" />
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                    场所代码：
+                </span>
+                </div>
+                <div class="option">
+                    <input nzSize="small" nz-input placeholder="Basic usage" [(ngModel)]="value" />
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                    场所地址名称：
+                </span>
+                </div>
+                <div class="option">
+                    <input nzSize="small" nz-input placeholder="Basic usage" [(ngModel)]="value" />
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                    场所经营状态：
+                </span>
+                </div>
+                <div class="option">
+                    <nz-select nzSize='small' [(ngModel)]="value" nzAllowClear nzPlaceHolder="Choose">
+                        <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+                    </nz-select>
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                    房间数：
+                </span>
+                </div>
+                <div class="option">
+                    <nz-select nzSize='small' [(ngModel)]="value" nzAllowClear nzPlaceHolder="Choose">
+                        <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+                    </nz-select>
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                    床位数量：
+                </span>
+                </div>
+                <div class="option">
+                    <nz-select nzSize='small' [(ngModel)]="value" nzAllowClear nzPlaceHolder="Choose">
+                        <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+                    </nz-select>
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                    星级：
+                </span>
+                </div>
+                <div class="option">
+                    <nz-select nzSize='small' [(ngModel)]="value" nzAllowClear nzPlaceHolder="Choose">
+                        <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+                    </nz-select>
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                    等级：
+                </span>
+                </div>
+                <div class="option">
+                    <nz-select nzSize='small' [(ngModel)]="value" nzAllowClear nzPlaceHolder="Choose">
+                        <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+                    </nz-select>
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                    从业人员数：
+                </span>
+                </div>
+                <div class="option">
+                    <nz-select nzSize='small' [(ngModel)]="value" nzAllowClear nzPlaceHolder="Choose">
+                        <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                        <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                        <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+                    </nz-select>
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                    法定代表人姓名：
+                </span>
+                </div>
+                <div class="option">
+                    <input nzSize="small" nz-input placeholder="Basic usage" [(ngModel)]="value" />
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                        法定代表人电话：
+                </span>
+                </div>
+                <div class="option">
+                    <input nzSize="small" nz-input placeholder="Basic usage" [(ngModel)]="value" />
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                        法定代表人证件号码：
+                </span>
+                </div>
+                <div class="option">
+                    <input nzSize="small" nz-input placeholder="Basic usage" [(ngModel)]="value" />
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                    场所负责人姓名：
+                </span>
+                </div>
+                <div class="option">
+                    <input nzSize="small" nz-input placeholder="Basic usage" [(ngModel)]="value" />
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                    场所负责人电话：
+                </span>
+                </div>
+                <div class="option">
+                    <input nzSize="small" nz-input placeholder="Basic usage" [(ngModel)]="value" />
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                    场所负责人证件号码：
+                </span>
+                </div>
+                <div class="option">
+                    <input nzSize="small" nz-input placeholder="Basic usage" [(ngModel)]="value" />
                 </div>
             </div>
         </div>
@@ -68,9 +232,48 @@
             </div>
         </div>
     </div>
-    <div name='shadowFrag'>
-        <div class="item_content">
-
+    <div name='单位信息'>
+        <div class="input_box">
+            <div class="left_content">
+                <div class="item_data" *ngFor="let item of shadowData.top">
+                    <label>{{item.name}}：</label>
+                    <div class="c_value">{{inputData.top[item.key]}}</div>
+                </div>
+            </div>
+            <div class="right_img">
+                <div class="img_box">
+                    <div class="img_text">法定代表人相片：
+                    </div>
+                    <div class="img_img"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div name='场所信息'>
+        <div class="input_box">
+            <div class="left_content">
+                <div class="item_data" *ngFor="let item of shadowData.top">
+                    <label>{{item.name}}：</label>
+                    <div class="c_value">{{inputData.middle[item.key]}}</div>
+                </div>
+            </div>
+            <div class="right_img">
+                <div class="img_box">
+                    <div class="img_text">法定代表人相片：
+                    </div>
+                    <div class="img_img"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div name='场所负责人信息'>
+        <div class="input_box">
+            <div class="left_content">
+                <div class="item_data" *ngFor="let item of shadowData.top">
+                    <label>{{item.name}}：</label>
+                    <div class="c_value">{{inputData.bottom[item.key]}}</div>
+                </div>
+            </div>
         </div>
     </div>
     <div name='tableFrag'>

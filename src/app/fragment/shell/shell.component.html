@@ -15,8 +15,22 @@
                     <img src="../../../../assets/sys/机关.png" alt="">
                     <span>单位信息</span>
                 </div>
+                <ng-content select="[name=单位信息]"></ng-content>
             </div>
-            <ng-content select="[name=shadowFrag]"></ng-content>
+            <div class="window_info_item">
+                <div class='window_top'>
+                    <img src="../../../../assets/sys/场所.png" alt="">
+                    <span>场所信息</span>
+                </div>
+                <ng-content select="[name=场所信息]"></ng-content>
+            </div>
+            <div class="window_info_item">
+                <div class='window_top'>
+                    <img src="../../../../assets/sys/负责人.png" alt="">
+                    <span>负责人信息</span>
+                </div>
+                <ng-content select="[name=场所负责人信息]"></ng-content>
+            </div>
         </nz-modal>
         <div class="query_title sys_public_title">
             <img src="../../../../assets/sys/列表.png" alt="">

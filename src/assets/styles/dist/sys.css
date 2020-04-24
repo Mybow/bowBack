@@ -53,7 +53,7 @@
 }
 #SYS_ .ant-modal {
   height: 90%;
-  width: 60% !important;
+  width: 70% !important;
   top: 5%;
   padding: 0 !important;
 }
@@ -68,14 +68,15 @@
 #SYS_ .ant-modal .window_info_item {
   padding: 20px;
   margin: 0 30px;
-  border-radius: 3px;
   border-radius: 5px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  white-space: normal;
+  margin-bottom: 20px;
 }
 #SYS_ .ant-modal .window_info_item .window_top {
   height: 70px;
   display: flex;
   align-items: center;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
   padding: 10px 20px;
 }
 #SYS_ .ant-modal .window_info_item .window_top img {
@@ -85,6 +86,52 @@
 #SYS_ .ant-modal .window_info_item .window_top span {
   font-size: 18px;
   margin-left: 20px;
+}
+#SYS_ .ant-modal .window_info_item .input_box {
+  display: flex;
+}
+#SYS_ .ant-modal .window_info_item .input_box .left_content {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#SYS_ .ant-modal .window_info_item .input_box .left_content .item_data {
+  width: 50%;
+  margin: 15px 0;
+  line-height: 25px;
+  display: flex;
+}
+#SYS_ .ant-modal .window_info_item .input_box .left_content .item_data label,
+#SYS_ .ant-modal .window_info_item .input_box .left_content .item_data .c_value {
+  font-size: 15px;
+  width: 50%;
+}
+#SYS_ .ant-modal .window_info_item .input_box .left_content .item_data .c_value {
+  border: 1px solid #cccccc;
+  height: 25px;
+  padding-left: 10px;
+  background-color: #cccccc;
+}
+#SYS_ .ant-modal .window_info_item .input_box .left_content .item_data label {
+  padding-right: 15px;
+  text-align: right;
+}
+#SYS_ .ant-modal .window_info_item .input_box .right_img {
+  flex: 1;
+}
+#SYS_ .ant-modal .window_info_item .input_box .right_img .img_box {
+  margin: 0 auto;
+  width: 160px;
+}
+#SYS_ .ant-modal .window_info_item .input_box .right_img .img_box .img_text {
+  font-size: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+#SYS_ .ant-modal .window_info_item .input_box .right_img .img_box .img_img {
+  width: 160px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  height: 180px;
 }
 #SYS_ .sys_box {
   position: relative;
@@ -114,7 +161,7 @@
   margin: 10px 0;
 }
 #SYS_ .sys_tjfx_bbxt .query_options .query_item .item_name {
-  width: 40%;
+  width: 50%;
   display: flex;
   align-items: center;
   padding-right: 10px;
