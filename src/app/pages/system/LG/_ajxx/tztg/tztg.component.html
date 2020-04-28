@@ -1,0 +1,100 @@
+<app-shell [isOpen]='isOpen' (closeWindow)='closeWindow()'>
+    <div name='查询项内容'>
+        <div class="query_options">
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                    通知通告代码：
+                </span>
+                </div>
+                <div class="option">
+                    <input nzSize="small" nz-input placeholder="Basic usage" [(ngModel)]="value" />
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                        电子文件名称：
+                </span>
+                </div>
+                <div class="option">
+                    <input nzSize="small" nz-input placeholder="Basic usage" [(ngModel)]="value" />
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                        发布单位名称：
+                </span>
+                </div>
+                <div class="option">
+                    <input nzSize="small" nz-input placeholder="Basic usage" [(ngModel)]="value" />
+                </div>
+            </div>
+            <div class="query_item">
+                <div class="item_name">
+                    <span>
+                        发布日期：
+                </span>
+                </div>
+                <div class="option">
+                    <nz-date-picker [(ngModel)]="value" (ngModelChange)="closeWindow()"></nz-date-picker>
+                </div>
+            </div>
+        </div>
+        <div class="button_bar">
+            <div class="but_box">
+                <div class="but_item">
+                    查询
+                </div>
+                <div class="but_item">
+                    重置
+                </div>
+                <div class="but_item">
+                    导出excel
+                </div>
+            </div>
+        </div>
+    </div>
+    <div name='弹窗内容'>
+        <div class="window_info_item">
+            <div class='window_top'>
+                <img src="../../../../assets/sys/fuzeren.png" alt="">
+                <span>通知通告</span>
+            </div>
+            <div class="input_box">
+                <div class="left_content">
+                    <div class="item_data" *ngFor="let item of shadowData.one">
+                        <label>{{item.name}}：</label>
+                        <div class="c_value">{{inputData[item.key]}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div name='表格内容'>
+        <div class="table_content">
+            <nz-table [nzFrontPagination]='false' [nzTotal]='1100' [nzShowSizeChanger]='true' [nzPageSizeOptions]='[10,20,30]' #table [nzData]="tableData.data">
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th *ngFor="let title of tableData.title">{{title.value}}</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of table.data;index as i">
+                        <td>{{i+1}}</td>
+                        <td *ngFor="let item of tableData.title">{{data[item.key]}}</td>
+                        <td (click)="openWindow(i)" class="pointer">详情</td>
+                    </tr>
+                </tbody>
+            </nz-table>
+            <div class="totalClass" *ngIf="pagination.total&&pagination.total!=0">
+                <span>每页 {{pagination.number}} 条</span>
+                <span> 总共 {{pagination.total}} 条</span>
+            </div>
+        </div>
+    </div>
+</app-shell>
+<!-- end sys_ -->

@@ -10,16 +10,19 @@
     height          : 100%;
     overflow        : hidden;
     background-color: #f7f7f7;
-    min-width       : 900px;
-
+    min-width       : 1500px;
+    .ant-layout-header{
+        padding: 0 30px;
+    }
+    .ant-layout-sider-children{
+        overflow: scroll;
+    }
     // 顶部导航栏
     .sys_topBar {
-        height    : 70px;
-        background: #142436;
+        height    : 100%;
         position  : relative;
 
         .sys_name {
-            padding-left      : 25px;
             height            : 100%;
             display           : flex;
             // justify-content: center;
@@ -106,6 +109,7 @@
             box-shadow   : 0px 0px 15px rgba(0, 0, 0, 0.3);
             white-space  : normal;
             margin-bottom: 20px;
+
             .window_top {
                 height     : 70px;
                 display    : flex;
@@ -159,11 +163,11 @@
 
                 .right_img {
                     flex: 1;
-
+                    display: flex;
                     .img_box {
                         margin: 0 auto;
                         width : 160px;
-
+                        margin:0 10px;
                         .img_text {
                             font-size    : 15px;
                             margin-bottom: 15px;
@@ -184,16 +188,7 @@
     .sys_box {
         position: relative;
         height  : 100%;
-        overflow: scroll;
-
-        &::-webkit-scrollbar {
-            width : 0;
-            height: 0;
-        }
-    }
-
-    .sys_tjfx_bbxt {
-        padding : 15px 10%;
+        padding : 30px 10%;
         height  : 100%;
         overflow: scroll;
 
@@ -227,6 +222,19 @@
                     nz-input {
                         width : 100%;
                         height: 25px;
+                    }
+
+                    nz-time-picker,
+                    nz-picker {
+                        height: 24px;
+                        width : 100%;
+
+                        .ant-time-picker-input,
+                        .ant-calendar-picker-input,
+                        .ant-calendar-picker{
+                            height: 24px;
+                            width : 100% !important;
+                        }
                     }
                 }
             }
@@ -268,8 +276,12 @@
             }
         }
     }
-}
 
+    &::-webkit-scrollbar {
+        width : 0;
+        height: 0;
+    }
+}
 
 .sys_public_box {
     padding         : 20px;
@@ -279,6 +291,7 @@
     box-shadow      : 0px 0px 8px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     color           : #333;
+    overflow        : scroll;
 
     .sys_public_title {
         span {

@@ -16,15 +16,15 @@ var SystemComponent = /** @class */ (function () {
                 name: "基本信息",
                 options: [
                     {
-                        url: "11",
+                        url: "csxx",
                         name: "场所信息"
                     },
                     {
-                        url: "22",
+                        url: "cyryxx",
                         name: "从业人员信息"
                     },
                     {
-                        url: "33",
+                        url: "aqffsbxx",
                         name: "安全防范设备信息"
                     },
                 ]
@@ -33,7 +33,7 @@ var SystemComponent = /** @class */ (function () {
                 name: "业务信息",
                 options: [
                     {
-                        url: "33",
+                        url: "lkcx",
                         name: "旅客查询"
                     },
                 ]
@@ -42,19 +42,19 @@ var SystemComponent = /** @class */ (function () {
                 name: "涉案信息",
                 options: [
                     {
-                        url: "",
+                        url: "csaj",
                         name: "场所案事件信息"
                     },
                     {
-                        url: "",
+                        url: "cyrysjan",
                         name: "从业人员涉及案事件信息"
                     },
                     {
-                        url: "",
+                        url: "jqqk",
                         name: "警情情况"
                     },
                     {
-                        url: "",
+                        url: "flfg",
                         name: "法律法规"
                     },
                 ]
@@ -76,15 +76,15 @@ var SystemComponent = /** @class */ (function () {
                 name: "安检信息",
                 options: [
                     {
-                        url: "bb",
+                        url: "rcjc",
                         name: "日常检查"
                     },
                     {
-                        url: "",
+                        url: "tztg",
                         name: "通知通告"
                     },
                     {
-                        url: "",
+                        url: "kyqk",
                         name: "可疑情况"
                     },
                 ]
@@ -93,19 +93,19 @@ var SystemComponent = /** @class */ (function () {
                 name: "其他信息",
                 options: [
                     {
-                        url: "bb",
+                        url: "zncjsb",
                         name: "智能采集设备信息"
                     },
                     {
-                        url: "",
+                        url: "ryzpcj",
                         name: "人员抓拍采集信息"
                     },
                     {
-                        url: "",
+                        url: "rlzpcj",
                         name: "人脸抓拍采集信息"
                     },
                     {
-                        url: "",
+                        url: "jczpcj",
                         name: "机车抓拍采集信息"
                     },
                 ]

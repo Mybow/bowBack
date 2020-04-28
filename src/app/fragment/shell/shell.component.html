@@ -2,40 +2,20 @@
     <!-- 查询条件板块 -->
     <div class="query_bar sys_public_box">
         <div class="query_title sys_public_title">
-            <img src="../../../../assets/sys/查询.png" alt="">
+            <img src="../../../../assets/sys/chaxun.png" alt="">
             <span>查询条件</span>
         </div>
-        <ng-content select="[name=queryFrag]"></ng-content>
+        <ng-content select="[name=查询项内容]"></ng-content>
     </div>
     <!-- 信息列表板块 -->
     <div class="infoList sys_public_box">
         <nz-modal (nzOnCancel)='closeWindow.emit()' [nzCancelText]='null' [nzGetContainer]='getNode' [nzFooter]='null' [(nzVisible)]="isOpen">
-            <div class="window_info_item">
-                <div class='window_top'>
-                    <img src="../../../../assets/sys/机关.png" alt="">
-                    <span>单位信息</span>
-                </div>
-                <ng-content select="[name=单位信息]"></ng-content>
-            </div>
-            <div class="window_info_item">
-                <div class='window_top'>
-                    <img src="../../../../assets/sys/场所.png" alt="">
-                    <span>场所信息</span>
-                </div>
-                <ng-content select="[name=场所信息]"></ng-content>
-            </div>
-            <div class="window_info_item">
-                <div class='window_top'>
-                    <img src="../../../../assets/sys/负责人.png" alt="">
-                    <span>负责人信息</span>
-                </div>
-                <ng-content select="[name=场所负责人信息]"></ng-content>
-            </div>
+            <ng-content select="[name=弹窗内容]"></ng-content>
         </nz-modal>
         <div class="query_title sys_public_title">
-            <img src="../../../../assets/sys/列表.png" alt="">
+            <img src="../../../../assets/sys/liebiao.png" alt="">
             <span>信息列表</span>
         </div>
-        <ng-content select="[name=tableFrag]"></ng-content>
+        <ng-content select="[name=表格内容]"></ng-content>
     </div>
 </div>
