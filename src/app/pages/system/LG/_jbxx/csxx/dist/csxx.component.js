@@ -9,6 +9,7 @@ exports.__esModule = true;
 var core_1 = require("@angular/core");
 var csxx_component = /** @class */ (function () {
     function csxx_component() {
+        // 弹框数据对象
         this.shadowData = {
             one: [
                 {
@@ -84,7 +85,8 @@ var csxx_component = /** @class */ (function () {
                 {
                     name: "星级代码",
                     key: "i"
-                }, {
+                },
+                {
                     name: "楼层数",
                     key: "i"
                 },
@@ -143,19 +145,24 @@ var csxx_component = /** @class */ (function () {
                 {
                     name: "视频监控设备判断指示符",
                     key: "i"
-                }, {
+                },
+                {
                     name: "信息采集设备判断指示符",
                     key: "i"
-                }, {
+                },
+                {
                     name: "消防设备判断指示符",
                     key: "i"
-                }, {
+                },
+                {
                     name: "场所经营状态代码",
                     key: "i"
-                }, {
+                },
+                {
                     name: "责任民警姓名",
                     key: "i"
-                }, {
+                },
+                {
                     name: "治安管理单位编码",
                     key: "i"
                 },
@@ -171,7 +178,9 @@ var csxx_component = /** @class */ (function () {
             u: "3",
             i: "2"
         };
+        // 表格数据对象
         this.tableData = {
+            // 表格表头
             title: [
                 {
                     key: "daima",
@@ -206,6 +215,7 @@ var csxx_component = /** @class */ (function () {
                     value: "法定代表人电话"
                 },
             ],
+            // 表格数据
             data: []
         };
         this.pagination = {
@@ -228,6 +238,7 @@ var csxx_component = /** @class */ (function () {
         console.log("close");
         this.isOpen = false;
     };
+    // tableData.title 对应的 key 值 , 按照title.key中的每一项复制粘贴
     csxx_component.prototype.ngOnInit = function () {
         for (var i = 0; i < 43; i++) {
             this.tableData.data.push({

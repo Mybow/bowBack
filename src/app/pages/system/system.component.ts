@@ -55,19 +55,6 @@ export class SystemComponent implements OnInit {
       ],
     },
     {
-      name: "统计分析",
-      options: [
-        {
-          url: "bb",
-          name: "报表统计",
-        },
-        {
-          url: "",
-          name: "图表统计",
-        },
-      ],
-    },
-    {
       name: "安检信息",
       options: [
         {
@@ -102,6 +89,19 @@ export class SystemComponent implements OnInit {
         {
           url: "jczpcj",
           name: "机车抓拍采集信息",
+        },
+      ],
+    },
+    {
+      name: "统计分析",
+      options: [
+        {
+          url: "bb",
+          name: "报表统计",
+        },
+        {
+          url: "",
+          name: "图表统计",
         },
       ],
     },

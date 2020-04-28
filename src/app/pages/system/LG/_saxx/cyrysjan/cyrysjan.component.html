@@ -63,11 +63,11 @@
         <div class="window_info_item">
             <div class='window_top'>
                 <img src="../../../../assets/sys/fuzeren.png" alt="">
-                <span>从业人员</span>
+                <span>从业人员涉案信息</span>
             </div>
             <div class="input_box">
                 <div class="left_content">
-                    <div class="item_data" *ngFor="let item of shadowData.one">
+                    <div class="item_data oneline" *ngFor="let item of shadowData.one">
                         <label>{{item.name}}：</label>
                         <div class="c_value">{{inputData[item.key]}}</div>
                     </div>

@@ -13,19 +13,39 @@ export class rcjc_Component implements OnInit {
         key: "q",
       },
       {
-        name: "可疑情况登记序号",
+        name: "检查类型编码",
         key: "w",
       },
       {
-        name: "可疑情况类别代码",
+        name: "日常检查登记序号",
         key: "e",
       },
       {
-        name: "可疑情况简要描述",
+        name: "检查人姓名",
         key: "r",
       },
       {
-        name: "登记人姓名",
+        name: "检查人警号",
+        key: "t",
+      },
+      {
+        name: "公安机关机构代码",
+        key: "t",
+      },
+      {
+        name: "检查日期",
+        key: "t",
+      },
+      {
+        name: "场所检查简要情况",
+        key: "t",
+      },
+      {
+        name: "检查结果简要情况",
+        key: "t",
+      },
+      {
+        name: "场所负责人姓名",
         key: "t",
       }
     ],
@@ -51,20 +71,20 @@ export class rcjc_Component implements OnInit {
         value: "场所代码",
       },
       {
-        key: "keyiqingkuangdengjixuhao",
-        value: "可疑情况登记序号",
+        key: "jianchaleixingbianma",
+        value: "检查类型编码",
       },
       {
-        key: "keyiqingkuangleibiedaima",
-        value: "可疑情况类别代码",
+        key: "jianchariqi",
+        value: "检查日期",
       },
       {
-        key: "keyiqingkuangjianyaomiaoshu",
-        value: "可疑情况简要描述",
+        key: "jiancharenxingming",
+        value: "检查人姓名",
       },
       {
-        key: "dengjirenxingming",
-        value: "登记人姓名",
+        key: "jiancharenjinghao",
+        value: "检查人警号",
       },
     ],
     data: [],
@@ -91,10 +111,10 @@ export class rcjc_Component implements OnInit {
     for (let i = 0; i < 43; i++) {
       this.tableData.data.push({
         changsuodaima: "芙蓉区",
-        keyiqingkuangdengjixuhao: "芙蓉区",
-        keyiqingkuangleibiedaima: "大酒店",
-        keyiqingkuangjianyaomiaoshu: "芙蓉广场",
-        dengjirenxingming: "正常",
+        jianchaleixingbianma: "芙蓉区",
+        jianchariqi: "大酒店",
+        jiancharenxingming: "芙蓉广场",
+        jiancharenjinghao: "正常",
       });
     }
   }

@@ -16,37 +16,21 @@ var kyqk_Component = /** @class */ (function () {
                     key: "q"
                 },
                 {
-                    name: "警情情况登记序号",
-                    key: "w"
-                },
-                {
-                    name: "警情类别代码",
-                    key: "e"
-                },
-                {
-                    name: "警情情况简要情况",
-                    key: "r"
-                },
-                {
-                    name: "报警人姓名",
+                    name: "登记人姓名",
                     key: "t"
                 },
                 {
-                    name: "报警时间",
-                    key: "y"
+                    name: "可疑情况登记序号",
+                    key: "w"
                 },
                 {
-                    name: "接警时间",
-                    key: "u"
+                    name: "可疑情况类别代码",
+                    key: "e"
                 },
                 {
-                    name: "处警人姓名",
-                    key: "i"
-                },
-                {
-                    name: "警情处理结果代码",
-                    key: "i"
-                },
+                    name: "可疑情况简要描述",
+                    key: "r"
+                }
             ]
         };
         this.inputData = {
@@ -62,33 +46,25 @@ var kyqk_Component = /** @class */ (function () {
         this.tableData = {
             title: [
                 {
-                    key: "suoshuquyu",
-                    value: "所属区域"
-                },
-                {
                     key: "changsuodaima",
                     value: "场所代码"
                 },
                 {
-                    key: "changsuomingcheng",
-                    value: "场所名称"
+                    key: "dengjirenxingming",
+                    value: "登记人姓名"
                 },
                 {
-                    key: "renyuanxingming",
-                    value: "人员姓名"
+                    key: "keyiqingkuangdengjixuhao",
+                    value: "可疑情况登记序号"
                 },
                 {
-                    key: "zhengjianleixing",
-                    value: "证件类型"
+                    key: "keyiqingkuangleibiedaima",
+                    value: "可疑情况类别代码"
                 },
                 {
-                    key: "zhengjianhaoma",
-                    value: "证件号码"
-                },
-                {
-                    key: "ruzhiriqi",
-                    value: "入职日期"
-                },
+                    key: "keyiqingkuangjianyaomiaoshu",
+                    value: "可疑情况简要描述"
+                }
             ],
             data: []
         };
@@ -115,13 +91,11 @@ var kyqk_Component = /** @class */ (function () {
     kyqk_Component.prototype.ngOnInit = function () {
         for (var i = 0; i < 43; i++) {
             this.tableData.data.push({
-                suoshuquyu: "芙蓉区",
                 changsuodaima: "芙蓉区",
-                changsuomingcheng: "大酒店",
-                renyuanxingming: "芙蓉广场",
-                zhengjianleixing: "正常",
-                zhengjianhaoma: "王大陆",
-                ruzhiriqi: "wenhao"
+                dengjirenxingming: "芙蓉区",
+                keyiqingkuangdengjixuhao: "大酒店",
+                keyiqingkuangleibiedaima: "芙蓉广场",
+                keyiqingkuangjianyaomiaoshu: "正常"
             });
         }
     };

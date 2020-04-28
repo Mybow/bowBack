@@ -2,6 +2,9 @@
   width: 0;
   height: 0;
 }
+label {
+  white-space: nowrap;
+}
 #SYS_ {
   position: relative;
   height: 100%;
@@ -119,6 +122,9 @@
 #SYS_ .ant-modal .window_info_item .input_box .left_content .item_data label {
   padding-right: 15px;
   text-align: right;
+}
+#SYS_ .ant-modal .window_info_item .input_box .left_content .item_data.oneline {
+  width: 100%;
 }
 #SYS_ .ant-modal .window_info_item .input_box .right_img {
   flex: 1;

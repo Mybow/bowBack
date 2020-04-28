@@ -6,6 +6,7 @@ import { Component, OnInit, Output, EventEmitter } from "@angular/core";
   styles: [],
 })
 export class csxx_component implements OnInit {
+  // 弹框数据对象
   shadowData = {
     one: [
       {
@@ -81,7 +82,8 @@ export class csxx_component implements OnInit {
       {
         name: "星级代码",
         key: "i",
-      },{
+      },
+      {
         name: "楼层数",
         key: "i",
       },
@@ -140,19 +142,24 @@ export class csxx_component implements OnInit {
       {
         name: "视频监控设备判断指示符",
         key: "i",
-      },{
+      },
+      {
         name: "信息采集设备判断指示符",
         key: "i",
-      },{
+      },
+      {
         name: "消防设备判断指示符",
         key: "i",
-      },{
+      },
+      {
         name: "场所经营状态代码",
         key: "i",
-      },{
+      },
+      {
         name: "责任民警姓名",
         key: "i",
-      },{
+      },
+      {
         name: "治安管理单位编码",
         key: "i",
       },
@@ -168,11 +175,13 @@ export class csxx_component implements OnInit {
     y: "6",
     u: "3",
     i: "2",
-  }
+  };
   getNode() {
     return document.getElementById("SYS_");
   }
+  // 表格数据对象
   tableData = {
+    // 表格表头
     title: [
       {
         key: "daima",
@@ -207,6 +216,7 @@ export class csxx_component implements OnInit {
         value: "法定代表人电话",
       },
     ],
+    // 表格数据
     data: [],
   };
   pagination = {
@@ -227,6 +237,7 @@ export class csxx_component implements OnInit {
   }
   constructor() {}
 
+  // tableData.title 对应的 key 值 , 按照title.key中的每一项复制粘贴
   ngOnInit() {
     for (let i = 0; i < 43; i++) {
       this.tableData.data.push({
